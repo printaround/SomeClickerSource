@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/baseImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/background_image_1"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/exitBtn"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/background_btn"
+        android:fontFamily="casual"
+        android:onClick="onExit"
+        android:text="@string/cross_text"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/background_btn"
+        android:fontFamily="casual"
+        android:onClick="onStartClick"
+        android:text="@string/start_text"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/timeAndPhasesInfo"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="casual"
+        android:textAlignment="textEnd"
+        android:textColor="@color/text_color"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/pointInfo"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/startBtn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="60dp"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="16sp" />
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/pointInfo"
+        android:layout_marginTop="5dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/panel_iV_1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:clickable="true"
+            android:contentDescription="@string/P1_text"
+            android:focusable="true"
+            android:onClick="onClick"
+            app:srcCompat="@drawable/panel_image_11"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/panel_iV_2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toEndOf="@id/panel_iV_1"
+            android:clickable="true"
+            android:contentDescription="@string/P2_text"
+            android:focusable="true"
+            android:onClick="onClick"
+            app:srcCompat="@drawable/panel_image_11"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/panel_iV_3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toEndOf="@id/panel_iV_2"
+            android:clickable="true"
+            android:contentDescription="@string/P3_text"
+            android:focusable="true"
+            android:onClick="onClick"
+            app:srcCompat="@drawable/panel_image_11"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/panel_iV_4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/panel_iV_1"
+            android:clickable="true"
+            android:contentDescription="@string/P4_text"
+            android:focusable="true"
+            android:onClick="onClick"
+            app:srcCompat="@drawable/panel_image_11"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/panel_iV_5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/panel_iV_2"
+            android:layout_toEndOf="@id/panel_iV_4"
+            android:clickable="true"
+            android:contentDescription="@string/P5_text"
+            android:focusable="true"
+            android:onClick="onClick"
+            app:srcCompat="@drawable/panel_image_11"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/panel_iV_6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/panel_iV_3"
+            android:layout_toEndOf="@id/panel_iV_5"
+            android:clickable="true"
+            android:contentDescription="@string/P6_text"
+            android:focusable="true"
+            android:onClick="onClick"
+            app:srcCompat="@drawable/panel_image_11"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/panel_iV_7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/panel_iV_4"
+            android:clickable="true"
+            android:contentDescription="@string/P7_text"
+            android:focusable="true"
+            android:onClick="onClick"
+            app:srcCompat="@drawable/panel_image_11"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/panel_iV_8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/panel_iV_5"
+            android:layout_toEndOf="@id/panel_iV_7"
+            android:clickable="true"
+            android:contentDescription="@string/P8_text"
+            android:focusable="true"
+            android:onClick="onClick"
+            app:srcCompat="@drawable/panel_image_11"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/panel_iV_9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/panel_iV_6"
+            android:layout_toEndOf="@id/panel_iV_8"
+            android:clickable="true"
+            android:contentDescription="@string/P9_text"
+            android:focusable="true"
+            android:onClick="onClick"
+            app:srcCompat="@drawable/panel_image_11"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/finalInfo"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/pointInfo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="310dp"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="18sp" />
+
+</RelativeLayout>

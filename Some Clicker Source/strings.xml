@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Some Clicker</string>
+
+    <string name="point_info_points_text">Points:</string>
+    <string name="game_over_text">GAME OVER:</string>
+    <string name="points_text">points</string>
+    <string name="your_result_text">Best result:</string>
+    <string name="time_text">Time:</string>
+    <string name="sec_text">s</string>
+    <string name="minute_text">m</string>
+
+    <string name="custom_text">custom</string>
+    <string name="cross_text">X</string>
+    <string name="start_text">START</string>
+
+    <string name="P1_text">Panel number 1</string>
+    <string name="P2_text">Panel number 2</string>
+    <string name="P3_text">Panel number 3</string>
+    <string name="P4_text">Panel number 4</string>
+    <string name="P5_text">Panel number 5</string>
+    <string name="P6_text">Panel number 6</string>
+    <string name="P7_text">Panel number 7</string>
+    <string name="P8_text">Panel number 8</string>
+    <string name="P9_text">Panel number 9</string>
+
+    <string name="clear_text">⠀</string>
+</resources>
